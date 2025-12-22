@@ -30,15 +30,38 @@ body {
 }
 
 .main-title {
-    /* Create the gold gradient background */
+    /* Gradient colors representing different shades of gold */
     background: linear-gradient(
         to right, 
-        #bf953f, 
-        #fcf6ba, 
-        #b38728, 
-        #fbf5b7, 
-        #aa771c
+        #bf953f 20%, 
+        #fcf6ba 40%, 
+        #b38728 50%, 
+        #fcf6ba 60%, 
+        #bf953f 80%
     );
+    
+    /* Expand the background size so it can slide */
+    background-size: 200% auto;
+    
+    /* Clip the background to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: inline-block;
+    
+    /* Apply the animation named 'shimmer' */
+    animation: goldShimmer 3s linear infinite;
+}
+
+/* Define the movement of the gold gradient */
+@keyframes goldShimmer {
+    to {
+        background-position: 200% center;
+    }
+}
     
     /* Clip the background to the text */
     -webkit-background-clip: text;
