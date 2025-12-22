@@ -4,34 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitation - Chhem Darin & Chea Sokkhim</title>
-    <style>
-        /* This CSS makes the PDF view full-screen on any device */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden; /* Removes extra scrollbars */
-            background-color: #525659; /* Standard PDF viewer background color */
-        }
-        .container {
-            width: 100%;
-            height: 100vh;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <iframe src="Sombot Bun BK.pdf#toolbar=1&navpanes=0&scrollbar=1" type="application/pdf">
-            <p>Your browser does not support viewing PDFs directly. 
-               <a href="Sombot Bun BK.pdf">Click here to open the file.</a>
-            </p>
-        </iframe>
+    <div class="invitation-wrapper" id="revealArea">
+        <div class="card shadow-animate">
+            <header>
+                <h1 class="main-title">ពិធីបុណ្យចម្រើនព្រះជន្ម បច្ច័យបួន និង ឆាកបស្សុកូល</h1>
+                <p class="honorees">
+                    ជូនលោកឪពុក <strong>ចែម ដារិន</strong> អ្នកម្តាយ <strong>ជា សុខឃីម</strong> [cite: 2]
+                    <br>ដែលមានព្រះជន្មាយុរស់នៅសព្វថ្ងៃ និងឧទទ្ទិសកុសលផលបុណ្យជូន [cite: 2]
+                </p>
+            </header>
+
+            <div class="ancestor-section">
+                <p>លោកតា <strong>ជា ម៉េង</strong> លោកយាយឧបាសិកា <strong>សំ អុន</strong> [cite: 5]</p>
+                <p>លោកតា <strong>ចែម នី</strong> លោកយាយ <strong>ចិន សាវឿន</strong> [cite: 5]</p>
+                <p class="small-text">ព្រមទាំងញាតិកាទាំងឡាយដែលបានទទួលអនិច្ចកម្ម [cite: 6]</p>
+            </div>
+
+            <section class="organizers">
+                <h3>អ្នកផ្តើមបុណ្យ [cite: 7]</h3>
+                <p>១. លោក <strong>នី គឹមហាក់</strong> អ្នកស្រី <strong>សុន ស្រីល័ក្ខ</strong> ព្រមទាំងបុត្រ [cite: 8, 9]</p>
+                <p>២. លោក <strong>នី ឈុនហៀង</strong> [cite: 10]</p>
+            </section>
+
+            <div class="message-box">
+                <p>យើងខ្ញុំទាំងអស់គ្នាមានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា ព្រមទាំងញាតិមិត្តជិតឆ្ងាយទាំងអស់ មេត្តាអញ្ជើញចូលរួមជាភ្ញៀវកិត្តិយស... [cite: 11, 12]</p>
+            </div>
+
+            <hr class="gold-line">
+
+            <section class="schedule">
+                <h2 class="section-title">កម្មវិធីបុណ្យ [cite: 13]</h2>
+                
+                <div class="day-card" data-aos="fade-up">
+                    <h4>ថ្ងៃពុធ ៧ មករា ២០២៦ [cite: 14]</h4>
+                    <ul>
+                        <li><span>១:០០ នាទី:</span> សែនក្រុងពាលី [cite: 14]</li>
+                        <li><span>២:០០ នាទី:</span> ស្រោចស្រពសុគន្ធវារី [cite: 15]</li>
+                        <li><span>៣:០០ នាទី:</span> និមន្តព្រះសង្ឃចម្រើនព្រះបរិត្ត [cite: 16]</li>
+                        <li><span>៤:០០ នាទី:</span> សំដែងព្រះធម៌ទេសនា [cite: 17]</li>
+                        <li><span>៥:០០ នាទី:</span> ពិសាភោជនីយាហារ [cite: 18]</li>
+                    </ul>
+                </div>
+
+                <div class="day-card" data-aos="fade-up">
+                    <h4>ថ្ងៃព្រហស្បតិ៍ ៨ មករា ២០២៦ [cite: 19]</h4>
+                    <ul>
+                        <li><span>៦:០០ នាទី:</span> នមស្ការព្រះរតនត្រ័យ [cite: 20]</li>
+                        <li><span>៧:០០ នាទី:</span> ប្រគេនយាគូ [cite: 21]</li>
+                        <li><span>៩:៣០ នាទី:</span> វេរភត្តាហារ និងបង្សុកូល [cite: 22]</li>
+                        <li><span>១០:៣០ នាទី:</span> ពិសាអាហារថ្ងៃត្រង់ (បង្ហើយបុណ្យ) [cite: 23]</li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>
+                <p class="location"><strong>ទីតាំង៖</strong> ភូមិ ព្រែកជ្រៅ ឃុំ រកាកោងទី២ ស្រុក មុខកំពូល ខេត្តកណ្តាល [cite: 25]</p>
+                <button id="mapBtn" class="btn-gold">មើលផែនទី (Google Maps)</button>
+            </footer>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
