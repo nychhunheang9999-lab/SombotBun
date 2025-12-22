@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     // 1. Reveal the invitation smoothly when the page loads
     const wrapper = document.getElementById('revealArea');
-    wrapper.style.opacity = "1";
+    if (wrapper) {
+        wrapper.style.opacity = "1";
+    }
 
-    // 2. Google Maps Button Logic
+    // 2. Updated Google Maps Link
     const mapBtn = document.getElementById('mapBtn');
-    mapBtn.addEventListener('click', function() {
-        // This is a search query for your location in Kandal
-        const location = "Prek Chrou Village, Roka Kaong Ti Pir, Muk Kampuol, Kandal";
-        const url = `https://goo.gl/maps/oXcH8NDwRpPAne639=${encodeURIComponent(location)}`;
-        window.open(url, '_blank');
-    });
+    if (mapBtn) {
+        mapBtn.addEventListener('click', function() {
+            const mapUrl = "https://goo.gl/maps/oXcH8NDwRpPAne639";
+            window.open(mapUrl, '_blank');
+        });
+    }
 });
