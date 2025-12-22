@@ -3,67 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation Card</title>
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>View Invitation PDF</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents double scrollbars */
+        }
+        .pdf-container {
+            width: 100%;
+            height: 100vh; /* Full screen height */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="invitation-container">
-        <header>
-            <h1>ពិធីបុណ្យចម្រើនព្រះជន្ម បច្ច័យបួន និង ឆាកបស្សុកូល</h1>
-            <p class="dedication">
-                ជូនលោកឪពុក <strong>ចែម ដារិន</strong> អ្នកម្តាយ <strong>ជា សុខឃីម</strong>
-                <br>ដែលមានព្រះជន្មាយុរស់នៅសព្វថ្ងៃ និងឧទទ្ទិសកុសលផលបុណ្យជូន
+    <div class="pdf-container">
+        <iframe src="Sombot Bun BK.pdf#toolbar=0" type="application/pdf">
+            <p>Your browser does not support PDFs. 
+               <a href="Sombot Bun BK.pdf">Download the PDF</a>.
             </p>
-        </header>
-
-        <section class="ancestors">
-            <p>លោកតា <strong>ជា ម៉េង</strong> លោកយាយឧបាសិកា <strong>សំ អុន</strong> [cite: 3, 5]</p>
-            <p>លោកតា <strong>ចែម នី</strong> លោកយាយ <strong>ចិន សាវឿន</strong> [cite: 4, 5]</p>
-            <p>ព្រមទាំងញាតិកាទាំងឡាយដែលបានទទួលអនិច្ចកម្ម [cite: 6]</p>
-        </section>
-
-        <section class="organizers">
-            <h3>អ្នកផ្តើមបុណ្យ [cite: 7]</h3>
-            <p>១. លោក <strong>នី គឹមហាក់</strong> អ្នកស្រី <strong>សុន ស្រីល័ក្ខ</strong> ព្រមទាំងបុត្រ [cite: 8, 9]</p>
-            <p>២. លោក <strong>នី ឈុនហៀង</strong> [cite: 10]</p>
-        </section>
-
-        <section class="invitation-text">
-            <p>យើងខ្ញុំទាំងអស់គ្នាមានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា ព្រមទាំងញាតិមិត្តជិតឆ្ងាយទាំងអស់ មេត្តាអញ្ជើញចូលរួមជាភ្ញៀវកិត្តិយសក្នុងពិធីបុណ្យចម្រើនព្រះជន្ម បច្ច័យបួន និងឆាកបស្សុកូលយើងខ្ញុំឱ្យបានអធិកអធមដើម្បីទទួលអនុមោទនាយកផល្លានិសង្សតាមកម្លាំងសទ្ធាជ្រះថ្លារៀងៗខ្លួន កុំបីអាក់ខានឡើយ។ [cite: 11, 12]</p>
-        </section>
-
-        <hr class="gold-divider">
-
-        <section class="schedule">
-            <h2>កម្មវិធីបុណ្យ [cite: 13]</h2>
-            
-            <div class="day-box">
-                <h4>ថ្ងៃពុធ ៤រោច ខែបុស្ស ឆ្នាំម្សាញ់ សប្តស័ក ពុទ្ធសករាជ ២៥៦៩ ត្រូវនឹងថ្ងៃទី៧ ខែមករា ឆ្នាំ២០២៦ [cite: 14]</h4>
-                <ul>
-                    <li><span>វេលាម៉ោង ១:០០ នាទី</span> ជួបជុំបងប្អូនកូនចៅញាតិមិត្តជិតឆ្ងាយទាំងអស់ប្រារព្ធពិធីសែនក្រុងពាលី [cite: 14]</li>
-                    <li><span>វេលាម៉ោង ២:០០ នាទី</span> ពិធីស្រោចស្រពសុគន្ធវារីជូនអ្នកមានគុណ [cite: 15]</li>
-                    <li><span>វេលាម៉ោង ៣:០០ នាទី</span> ជួបជុំពុទ្ធបរិស័ទនមស្ការថ្វាយបង្គំព្រះរតនត្រ័យនិមន្តព្រះសង្ឃចម្រើនព្រះបរិត្ត [cite: 16]</li>
-                    <li><span>វេលាម៉ោង ៤:០០ នាទី</span> សំដែងព្រះធម៌ទេសនា [cite: 17]</li>
-                    <li><span>វេលាម៉ោង ៥:០០ នាទី</span> ទទួលបដិសណ្ឋារកិច្ចភ្ញៀវកិត្តិយសពិសាភោជនីយាហារ [cite: 18]</li>
-                </ul>
-            </div>
-
-            <div class="day-box">
-                <h4>លុះព្រឹកឡើងថ្ងៃព្រហស្បតិ៍ ៥រោច ខែបុស្ស ត្រូវនឹងថ្ងៃទី៨ ខែឆ្នាំដដែល [cite: 19]</h4>
-                <ul>
-                    <li><span>វេលាម៉ោង ៦:០០ នាទីព្រឹក</span> នមស្ការថ្វាយបង្គំព្រះរតនត្រ័យ [cite: 20]</li>
-                    <li><span>វេលាម៉ោង ៧:០០ នាទីព្រឹក</span> ប្រគេនយាគូដល់ព្រះសង្ឃ [cite: 21]</li>
-                    <li><span>វេលាម៉ោង ៩: cultural៣០ នាទីព្រឹក</span> ធ្វើពិធីរាប់បាត្រ ដារឆ្លង វេរភត្តាហារ ប្រគេនទេយ្យវត្ថុ ចំពោះព្រះសង្ឃ និងបង្សុកូល [cite: 22]</li>
-                    <li><span>វេលាម៉ោង ១០:៣០ នាទី</span> អញ្ជើញភ្ញៀវកិត្តិយសពិសារភោជនីយអាហារថ្ងៃត្រង់ ជាកិច្ចបង្ហើយបុណ្យ [cite: 23]</li>
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <p><strong>បញ្ជាក់៖</strong> ពិធីបុណ្យប្រារព្ធនៅគេហដ្ឋាន ភូមិ ព្រែកជ្រៅ ឃុំ រកាកោងទី២ ស្រុក មុខកំពូល ខេត្តកណ្តាល [cite: 25]</p>
-            <div class="qr-code-box">ស្កេន QR ដើម្បីមើលទីតាំង [cite: 24]</div>
-        </footer>
+        </iframe>
     </div>
 </body>
 </html>
