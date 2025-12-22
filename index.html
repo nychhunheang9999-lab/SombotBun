@@ -1,81 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
 <head>
-  <meta charset="UTF-8">
-  <title>View PDF from GitHub</title>
+    <meta charset="UTF-8">
+    <title>កម្មវិធីបុណ្យសព</title>
+    <style>
+        body {
+            font-family: "Khmer OS Battambang", "Khmer OS Siemreap", serif;
+            background: #ffffff;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-    }
+        .invitation {
+            width: 900px;
+            margin: 20px auto;
+            padding: 40px;
+            border: 4px solid #f7941d;
+            position: relative;
+        }
 
-    header {
-      background: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
+        .corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f7941d;
+        }
 
-    .buttons {
-      text-align: center;
-      margin: 15px 0;
-    }
+        .corner.top-left {
+            top: -4px;
+            left: -4px;
+            border-right: none;
+            border-bottom: none;
+        }
 
-    .buttons a {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 18px;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
+        .corner.top-right {
+            top: -4px;
+            right: -4px;
+            border-left: none;
+            border-bottom: none;
+        }
 
-    .buttons a.download {
-      background: #28a745;
-    }
+        .corner.bottom-left {
+            bottom: -4px;
+            left: -4px;
+            border-right: none;
+            border-top: none;
+        }
 
-    .pdf-container {
-      width: 100%;
-      height: calc(100vh - 140px);
-    }
+        .corner.bottom-right {
+            bottom: -4px;
+            right: -4px;
+            border-left: none;
+            border-top: none;
+        }
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      background: white;
-    }
-  </style>
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 25px 0 10px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        ul li::before {
+            content: "❖ ";
+        }
+
+        .schedule li::before {
+            content: "✺ ";
+        }
+
+        .qr {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h2>PDF Viewer (From GitHub)</h2>
-  </header>
+<div class="invitation">
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
 
-  <div class="buttons">
-    <a 
-      href="https://raw.githubusercontent.com/USERNAME/REPO/main/files/ceremony.pdf"
-      target="_blank">
-      Open PDF
-    </a>
+    <h1>កម្មវិធីបុណ្យសព និង បុណ្យបូជា ជូន សពសព្វជាតិ</h1>
 
-    <a 
-      href="https://github.com/nychhunheang9999-lab/SombotBun/blob/main/Sombot%20Bun%20BK.pdf"
-      download
-      class="download">
-      Download PDF
-    </a>
-  </div>
+    <div class="divider">❦ ❦ ❦</div>
 
-  <div class="pdf-container">
-    <iframe 
-      src="https://raw.githubusercontent.com/USERNAME/REPO/main/files/ceremony.pdf">
-    </iframe>
-  </div>
+    <p class="center">
+        ពួកយើងខ្ញុំ ក្រុមគ្រួសារ និង សាច់ញាតិ
+        សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ
+        អ្នកឧកញ៉ា លោក លោកស្រី អញ្ជើញចូលរួម
+        ក្នុងពិធីបុណ្យសព និង បុណ្យបូជា
+        ដើម្បីឧទ្ទិសកុសលជូនដល់វិញ្ញាណក្ខន្ធ
+    </p>
+
+    <div class="section-title">សពសព្វជាតិ</div>
+
+    <ul>
+        <li>១. លោក និង លោកស្រី សាច់ញាតិ មិត្តភក្តិ ជិតឆ្ងាយ</li>
+        <li>២. លោក និង លោកស្រី អ្នកមានកិត្តិយស</li>
+    </ul>
+
+    <p>
+        សូមអញ្ជើញចូលរួមគោរពវិញ្ញាណក្ខន្ធ
+        ក្នុងការបូជាសពតាមប្រពៃណី និង
+        ប្រព្រឹត្តទៅដោយសេចក្តីគោរព សោកស្តាយ
+        និង អនុគ្រោះយ៉ាងខ្ពង់ខ្ពស់។
+    </p>
+
+    <div class="section-title">កម្មវិធីបុណ្យ</div>
+
+    <ul class="schedule">
+        <li>ម៉ោង ៨:០០ ព្រឹក – ទទួលភ្ញៀវ និង សូត្រមន្ត</li>
+        <li>ម៉ោង ២:០០ រសៀល – ព្រះសង្ឃសូត្រមន្ត</li>
+        <li>ម៉ោង ៣:០០ រសៀល – ពិធីបូជាសពតាមប្រពៃណី</li>
+        <li>ម៉ោង ៥:០០ ល្ងាច – ពិធីសូត្រមន្ត</li>
+        <li>ម៉ោង ៦:០០ ល្ងាច – ពិធីសូត្រមន្តរាត្រី</li>
+    </ul>
+
+    <p>
+        នៅថ្ងៃបន្ទាប់ ព្រឹត្តិការណ៍បន្តដូចខាងក្រោម៖
+    </p>
+
+    <ul class="schedule">
+        <li>ម៉ោង ៦:០០ ព្រឹក – ព្រះសង្ឃសូត្រមន្ត</li>
+        <li>ម៉ោង ៧:០០ ព្រឹក – ពិធីដង្ហែសព</li>
+        <li>ម៉ោង ៨:៣០ ព្រឹក – ពិធីបូជាសព និង បញ្ចុះសព</li>
+        <li>ម៉ោង ១០:៣០ ព្រឹក – បញ្ចប់កម្មវិធី</li>
+    </ul>
+
+    <div class="qr">
+        <p>ស្កេន QR ដើម្បីមើលទីតាំង</p>
+        <!-- QR image can be inserted here -->
+        <img src="qr-placeholder.png" alt="QR Code" width="120">
+    </div>
+
+    <div class="footer">
+        សូមអរគុណយ៉ាងជ្រាលជ្រៅ ចំពោះការចូលរួម និង ការអនុគ្រោះ
+    </div>
+</div>
 
 </body>
 </html>
