@@ -29,8 +29,30 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.main-title { color: var(--dark-red); font-size: 1.8rem; }
-
+.main-title {
+    /* Create the gold gradient background */
+    background: linear-gradient(
+        to right, 
+        #bf953f, 
+        #fcf6ba, 
+        #b38728, 
+        #fbf5b7, 
+        #aa771c
+    );
+    
+    /* Clip the background to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Make the actual text transparent so the gradient shows through */
+    color: transparent;
+    
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block; /* Essential for the gradient to wrap correctly */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Optional: adds depth */
+}
 .ancestor-section {
     background: var(--cream);
     padding: 15px;
