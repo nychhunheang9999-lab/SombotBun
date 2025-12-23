@@ -1,60 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="km">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <script src="https://kit.fontawesome.com/11acc5a5c1.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-	<title>Wedding website</title>
-	</head>
+    <title>Digital Invitation Card</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
 <body>
-	<div class="container">
-		<div class="banner">
-			<div class="nav">
-				<b>Jake and Sasha</b>
-				<div class="menu">
-					<a href="#">Home</a>
-					<a href="#us">Us</a>
-					<a href="#venue">Venue</a>
-					<a href="#party">Party</a>
-				</div>
-			</div>
-			<div class="text">
-				<h1>Jake & Sasha</h1>
-				<span class="date">On 7th November, 2019</span>
-			</div>
-		</div>
-		<div class="section">
-			<div class="us">
-				<h2><a name="us">Us</a></h2>
-				<div class="us1">
-					<img src="https://github.com/nychhunheang9999-lab/SombotBun/blob/main/Sombot%20Bun.png">
-					<span>Sasha is mine!</span>
-				</div>
-				<div class="us1">
-					<img src="https://i.ibb.co/WNhDWh0/wed-woman.jpg">
-					<span>Jake is mine!</span>
-				</div>
-			</div>
-			<div class="venue">
-				<h2><a name="venue">Venue</a></h2>
-				<img src="https://i.ibb.co/wZk2sTj/wed-venue.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.....</p>
-			</div>
-			<div class="party">
-				<h2><a name="party">Party</a></h2>
-				<img src="https://i.ibb.co/dMb2T7P/wed-party.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.....</p>
-			</div>
-			<footer>&copy; Copyright 2019 U Can Code Follow me @ <i class="fab fa-youtube"></i> <i class="fab fa-twitter"></i> <i class="fab fa-github"></i> <i class="fab fa-codepen"></i></footer>
-		</div>
-	</div>
+    <div class="background-container">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+    </div>
+
+    <div class="ticket-container" id="revealArea">
+        <div class="ticket">
+            <header>
+                <h1 class="main-title">ពិធីបុណ្យចម្រើនព្រះជន្ម បច្ច័យបួន និង ឆាកបស្សុកូល</h1>
+                <p class="honorees">
+                    ជូនលោកឪពុក <strong>ចែម ដារិន</strong> អ្នកម្តាយ <strong>ជា សុខឃីម</strong> 
+                </p>
+            </header>
+
+            <div class="content">
+                <div class="info-row">
+                    <span class="label">កាលបរិច្ឆេទ:</span>
+                    <span class="value">៧-៨ មករា ២០២៦ </span>
+                </div>
+                <div class="info-row">
+                    <span class="label">ទីតាំង:</span>
+                    <span class="value">ភូមិ ព្រែកជ្រៅ, ខេត្តកណ្តាល [cite: 25]</span>
+                </div>
+            </div>
+
+            <div class="footer-actions">
+                <button id="mapBtn" class="btn-gold">View Location</button>
+            </div>
+            
+            <div class="stub-line"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
