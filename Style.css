@@ -41,7 +41,7 @@ body {
     );
     
     /* Expand the background size so it can slide */
-    background-size: 200% auto;
+    background-size: 200%;
     
     /* Clip the background to the text */
     -webkit-background-clip: text;
