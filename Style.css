@@ -1,206 +1,96 @@
-*{
-	padding:0;
-	margin: 0;
-	box-sizing: border-box;
-}
-.container{
-    width:100%;
-    height: auto;
-    font-family: 'cookie', cursive;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-color: #ff99b6;
-    overflow: hidden;
-}
-.banner{
-    width:100%;
-    height: 650px;
-    background-image: url(https://i.ibb.co/kHmMsgR/wed-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    border-radius: 0 0 500px 0;
-}
-.nav{
-    width:90%;
-    height: auto;
-    background-color: rgba(255,200,200,.7);
-    border-radius: 30px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.nav b{
-    font-size: 40px;
-    margin-left: 20px;
-}
-.menu{
-    width:50%;
-    height: 60px;
-    border-radius: 30px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
-    transition-duration: .5s;
-}
-.menu a{
-    text-decoration: none;
-    font-size: 30px;
-    color:#333;
-    font-weight: bolder;
-    transition-duration: .5s;
-}
-.menu a:hover{
-    border-bottom: 5px solid #f15;
-}
-.text{
-    width:100%;
-    position: relative;
-    top:40px;
-    left: 20px;
-    font-size: 50px;
-    text-align: left;
-}
-.text h1{
-    color:#f15;
-    text-shadow: 0 3px 10px rgba(0,0,0,.5);
-}
-.text .date{
-    color:#fff;
-    background-color: #f15;
-    padding: 5px;
-    border-radius: 40px 0 40px 0;
-    transition-duration: .5s;
-}
-.text .date:hover{
-    background-color: #fff;
-    color:#f15;
-}
-.section{
-    width:100%;
-    height: auto;
-    background-color: #efefef;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-.us{
-    width:80%;
-    height: auto;
-    background-color: #fff;
-    border-radius: 20px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
-}
-.us img{
-    width:210px;
-    height: 297px;
-    border-radius: 50%;
-    border-top: 10px solid #f15;
-    border-bottom: 10px solid #f15;
-    margin-bottom: 20px;
-}
-.section h2{
-    width:100%;
-    text-align: center;
-    color:#f15;
-    font-size: 60px;
-}
-.us1 {
-    display: flex;
-    flex-direction: column;
-}
-.us1 span{
-    color:#fff;
-    font-size: 40px;
-    padding: 8px;
-    background-color: #f15;
-    border-radius: 8px;
-}
-.venue{
-    width:80%;
-    height: auto;
-    background-color: #fff;
-    border-radius: 20px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
-}
-.venue img{
-    width:50%;
-    height: 300px;
-    display: inline;
-    border:2px solid #f15;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-.venue p{
-    font-size: 35px;
-    line-height: 30px;
-    color:#333;
+:root {
+    --gold-grad: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
 }
 
-.party{
-    width:80%;
-    height: auto;
-    background-color: #fff;
-    border-radius: 20px;
-    margin-top: 20px;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Kantumruy Pro', sans-serif;
+    overflow-x: hidden;
+    background: #87ceeb; /* Sky Blue */
+}
+
+/* Cloud Animation */
+.background-container {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    background: white;
+    width: 200px; height: 60px;
+    border-radius: 200px;
+    opacity: 0.8;
+}
+
+.cloud::after, .cloud::before {
+    content: ''; position: absolute; background: white; border-radius: 50%;
+}
+
+.cloud::after { width: 100px; height: 100px; top: -50px; left: 50px; }
+.cloud::before { width: 80px; height: 80px; top: -30px; left: 20px; }
+
+.cloud1 { top: 10%; animation: moveClouds 25s linear infinite; }
+.cloud2 { top: 40%; animation: moveClouds 35s linear infinite reverse; }
+.cloud3 { top: 70%; animation: moveClouds 30s linear infinite; }
+
+@keyframes moveClouds {
+    from { left: -250px; }
+    to { left: 100%; }
+}
+
+/* Ticket Design */
+.ticket-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.ticket {
+    background: white;
+    width: 100%;
+    max-width: 450px;
     padding: 30px;
-    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    position: relative;
+    border: 2px solid #b38728;
+    text-align: center;
 }
-.party img{
-    width:50%;
-    height: 300px;
-    display: inline;
-    border:2px solid #f15;
-    border-radius: 8px;
-    margin-bottom: 10px;
+
+.main-title {
+    background: var(--gold-grad);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    animation: goldShimmer 3s linear infinite;
 }
-.party p{
-    font-size: 35px;
-    line-height: 30px;
-    color:#333;
-}
-footer{
-    width:100%;
-    height: auto;
-    color:#ddd;
-    font-size: 30px;
-    font-family: monospace;
-    background-color: #555;
+
+@keyframes goldShimmer { to { background-position: 200% center; } }
+
+.info-row { margin: 15px 0; border-bottom: 1px dashed #ddd; padding-bottom: 5px; }
+.label { font-weight: bold; color: #888; font-size: 0.9rem; display: block; }
+.value { color: #333; font-size: 1.1rem; }
+
+.btn-gold {
+    background: #b38728;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
     margin-top: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-footer i{
-    color:skyblue;
-    font-size: 30px;
-    margin-left: 20px;
 }
