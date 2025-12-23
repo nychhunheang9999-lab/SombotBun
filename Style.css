@@ -1,109 +1,206 @@
-:root {
-    --gold: #b8860b;
-    --dark-red: #8b0000;
-    --cream: #fffdf5;
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
 }
-
-body {
-    background-color: #f4f1ea;
-    font-family: 'Kantumruy Pro', sans-serif;
-    margin: 0;
+.container{
+    width:100%;
+    height: auto;
+    font-family: 'cookie', cursive;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #ff99b6;
+    overflow: hidden;
+}
+.banner{
+    width:100%;
+    height: 650px;
+    background-image: url(https://i.ibb.co/kHmMsgR/wed-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
-    color: #333;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 0 0 500px 0;
 }
-
-.invitation-wrapper {
-    width: 100%;
-    max-width: 700px;
-    padding: 20px;
-    opacity: 0; /* Starts hidden for JS effect */
-    transition: opacity 1.5s ease-in;
+.nav{
+    width:90%;
+    height: auto;
+    background-color: rgba(255,200,200,.7);
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-.card {
-    background: white;
-    border: 10px double var(--gold);
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.nav b{
+    font-size: 40px;
+    margin-left: 20px;
 }
-
-.main-title {
-    /* Gradient colors representing different shades of gold */
-    background: linear-gradient(
-        to right, 
-        #bf953f 20%, 
-        #fcf6ba 40%, 
-        #b38728 50%, 
-        #fcf6ba 60%, 
-        #bf953f 80%
-    );
-    
-    /* Expand the background size so it can slide */
-    background-size: 200%;
-    
-    /* Clip the background to the text */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: inline-block;
-    
-    /* Apply the animation named 'shimmer' */
-    animation: goldShimmer 3s linear infinite;
+.menu{
+    width:50%;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    transition-duration: .5s;
 }
-
-/* Define the movement of the gold gradient */
-@keyframes goldShimmer {
-    to {
-        background-position: 200% center;
-    }
+.menu a{
+    text-decoration: none;
+    font-size: 30px;
+    color:#333;
+    font-weight: bolder;
+    transition-duration: .5s;
 }
-    
-    /* Clip the background to the text */
-    -webkit-background-clip: text;
-    background-clip: text;
-    
-    /* Make the actual text transparent so the gradient shows through */
-    color: transparent;
-    
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    display: inline-block; /* Essential for the gradient to wrap correctly */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Optional: adds depth */
+.menu a:hover{
+    border-bottom: 5px solid #f15;
 }
-.ancestor-section {
-    background: var(--cream);
-    padding: 15px;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-.organizers { text-align: left; margin: 25px 0; padding-left: 10%; }
-
-.gold-line { border: 1px solid var(--gold); margin: 30px 0; }
-
-.day-card {
+.text{
+    width:100%;
+    position: relative;
+    top:40px;
+    left: 20px;
+    font-size: 50px;
     text-align: left;
-    background: #fafafa;
-    padding: 15px;
-    border-left: 4px solid var(--dark-red);
+}
+.text h1{
+    color:#f15;
+    text-shadow: 0 3px 10px rgba(0,0,0,.5);
+}
+.text .date{
+    color:#fff;
+    background-color: #f15;
+    padding: 5px;
+    border-radius: 40px 0 40px 0;
+    transition-duration: .5s;
+}
+.text .date:hover{
+    background-color: #fff;
+    color:#f15;
+}
+.section{
+    width:100%;
+    height: auto;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.us{
+    width:80%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+}
+.us img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 10px solid #f15;
+    border-bottom: 10px solid #f15;
     margin-bottom: 20px;
 }
+.section h2{
+    width:100%;
+    text-align: center;
+    color:#f15;
+    font-size: 60px;
+}
+.us1 {
+    display: flex;
+    flex-direction: column;
+}
+.us1 span{
+    color:#fff;
+    font-size: 40px;
+    padding: 8px;
+    background-color: #f15;
+    border-radius: 8px;
+}
+.venue{
+    width:80%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+}
+.venue img{
+    width:50%;
+    height: 300px;
+    display: inline;
+    border:2px solid #f15;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.venue p{
+    font-size: 35px;
+    line-height: 30px;
+    color:#333;
+}
 
-ul { list-style: none; padding: 0; }
-li span { font-weight: bold; color: var(--gold); margin-right: 10px; }
-
-.btn-gold {
-    background: var(--gold);
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    cursor: pointer;
-    font-family: inherit;
-    margin-top: 15px;
+.party{
+    width:80%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-shadow: 0 3px 10px 0 rgba(100,100,100,.3);
+}
+.party img{
+    width:50%;
+    height: 300px;
+    display: inline;
+    border:2px solid #f15;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.party p{
+    font-size: 35px;
+    line-height: 30px;
+    color:#333;
+}
+footer{
+    width:100%;
+    height: auto;
+    color:#ddd;
+    font-size: 30px;
+    font-family: monospace;
+    background-color: #555;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer i{
+    color:skyblue;
+    font-size: 30px;
+    margin-left: 20px;
 }
