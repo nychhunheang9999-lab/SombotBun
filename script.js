@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Reveal the invitation smoothly when the page loads
+    // Reveal ticket
     const wrapper = document.getElementById('revealArea');
-    if (wrapper) {
-        wrapper.style.opacity = "1";
-    }
+    if (wrapper) wrapper.style.opacity = "1";
 
-    // 2. Updated Google Maps Link
+    // Map Button
     const mapBtn = document.getElementById('mapBtn');
     if (mapBtn) {
         mapBtn.addEventListener('click', function() {
-            const mapUrl = "https://goo.gl/maps/oXcH8NDwRpPAne639";
-            window.open(mapUrl, '_blank');
+            window.open("https://goo.gl/maps/oXcH8NDwRpPAne639", '_blank');
         });
     }
 });
