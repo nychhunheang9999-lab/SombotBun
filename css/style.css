@@ -465,7 +465,7 @@ body {
 #time {
 	width: auto;
 	height: auto;
-	padding: 100px;
+	padding: 0px;
 	background-color: #eee;
 	border-radius: 20px;
 	font-size: 10px;
@@ -505,11 +505,11 @@ body {
 }
 
 .days {
-	background: linear-gradient(50deg, #b33a46, #9b313c);
+	background: linear-gradient(40deg, #b33a46, #9b313c);
 }
 
 .hours {
-	background: linear-gradient(50deg, #a7c3cd, #90a9b2);
+	background: linear-gradient(40deg, #a7c3cd, #90a9b2);
 }
 
 .minutes {
