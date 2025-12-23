@@ -463,12 +463,12 @@ body {
 }
 
 #time {
-	width: 30px;
-	height: 30px;
-	padding: 20px;
+	width: auto;
+	height: auto;
+	padding: 10px;
 	background-color: #eee;
 	border-radius: 20px;
-	font-size: 30px;
+	font-size: 10px;
 }
 
 .venue {
