@@ -463,8 +463,8 @@ body {
 }
 
 #time {
-	width: auto;
-	height: auto;
+	width: 30px;
+	height: 30px;
 	padding: 20px;
 	background-color: #eee;
 	border-radius: 20px;
