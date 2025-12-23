@@ -26,7 +26,7 @@ $(document).on('click', function(){
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 29, 2024 00:00:00").getTime();
+var countDownDate = new Date("Nov 29, 2026 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -49,7 +49,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("time").innerHTML = "Bless the married couple for happy life!";
+        document.getElementById("time").innerHTML = "សូមចុចលើប៊ូតុងខាងក្រោមដើម្បីទាញ់យក";
     }
 }, 1000);
 
